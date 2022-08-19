@@ -12,14 +12,69 @@ code {
     monospace;
 }
 
+main{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.container{
+  max-width: 70%;
+  display:grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+}
+
+.container-image{
+  border-radius: 5px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
 img {
   border-radius: 5px;
   max-width: 200px;
   max-height: 200px;
 }
 
-.container{
-  display:flex;
-  gap: 1.5rem;
-  justify-content: column;
+.search-button-container{
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.search-button{
+  margin:0;
+  padding:1.1rem;
+  border-radius: 5px;
+  background-color: rgb(79, 79, 235);
+}
+
+.search-button:hover{
+  background-color: white;
+}
+
+.image-author{
+  font-size: 1rem;
+}
+
+.image-text{
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.form-input{
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: gray;
+  padding-top: 2px;
+  padding-left: 1px;
+  border-bottom: teal 1px solid;
 }
